@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Brain Map</title>
+  </head>
+  <body>
+    <header data-qa="header">
+      <h1>
+        <i class="ph-fill ph-brain"></i>
+        <span data-qa="brain-title"> / brain map</span>
+      </h1>
+      <button class="get-started-btn" data-qa="get-started-btn">
+        Get started - for free
+      </button>
+    </header>
+    <main>
+      <section class="section empty-state">
+        <div class="empty-state-message-div">
+          <div class="icon-wrapper">
+            <i class="ph ph-list-plus"></i>
+            <i class="ph-fill ph-plus-circle ph-plus-circle-big hide"></i>
+          </div>
+          <p>No concepts yet</p>
+          <p class="create-text">
+            Create with the help of<button class="tag">tags</button>
+          </p>
+          <p>Click the + button to add your first memory card</p>
+        </div>
+        <div class="cards-state-div main-hide">
+          <div class="card"></div>
+        </div>
+        <div class="empty-state-icon-div">
+          <button class="add-card-btn">
+            <i class="ph-fill ph-plus-circle"></i>
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>

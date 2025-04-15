@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 80vw;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+header h1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 2.8rem;
+  color: #212529;
+}
+
+.get-started-btn {
+  height: 3rem;
+  width: 15rem;
+  border-radius: 2rem;
+  border-style: none;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #f8f9fa;
+  background-color: #3c17db;
+}
+
+/* ------------- main -------------- */
+
+/* Empty state section */
+
+main {
+  /* background-color: #f8f9fa; */
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.section {
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+.empty-state {
+  grid-template-columns: 90% 10%;
+}
+
+.cards-state-div {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.empty-state-message-div {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.empty-state p {
+  margin: 0.3rem;
+}
+
+.empty-state-icon-div {
+  text-align: center;
+  margin: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.icon-wrapper {
+  position: relative;
+  height: 10rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.ph-plus-circle {
+  font-size: 6rem;
+  color: #3c17db;
+
+  transition: ease-in 0.1s;
+}
+
+.ph-plus-circle:hover {
+  font-size: 7rem;
+}
+
+.ph-list-plus,
+.ph-plus-circle-big {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10rem;
+  color: #e81766;
+
+  transition: 0.5s;
+}
+
+/* tag design */
+
+.tag {
+  width: 4rem;
+  height: 1.5rem;
+
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: #3c17db;
+  color: #f8f9fa;
+
+  margin-left: 0.5rem;
+}
+
+.create-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin: auto; */
+}
+
+/* Hide elements */
+
+.main-hide {
+  display: none;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: auto;
+  transition: opacity 0.4s ease;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+/* Card component */
+
+.card {
+  height: 90%;
+  width: 90%;
+
+  background-color: #212529;
+  border-radius: 1rem;
+  margin: auto;
+}
