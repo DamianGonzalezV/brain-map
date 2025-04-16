@@ -162,11 +162,23 @@ button {
 
 /* Card component */
 
-.card {
-  height: 90%;
-  width: 90%;
-
-  background-color: #212529;
+.card-form {
+  height: 80%;
+  width: 50%;
+  background-color: #dee2e6;
+  color: #212529;
   border-radius: 1rem;
   margin: auto;
+
+  padding: 2rem;
+}
+
+.card-title-input {
+  width: 20rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  color: #0b0b0b;
+  padding: 0 1.5rem;
 }
