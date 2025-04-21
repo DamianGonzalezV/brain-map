@@ -99,11 +99,12 @@ button {
   font-size: 6rem;
   color: #3c17db;
 
-  transition: ease-in 0.1s;
+  transition: ease-in 0.3s;
 }
 
 .ph-plus-circle:hover {
-  font-size: 7rem;
+  transform: scale(1.1);
+  color: #e81766;
 }
 
 .ph-list-plus,
@@ -142,7 +143,81 @@ button {
   /* margin: auto; */
 }
 
-/* Hide elements */
+/* Card component */
+
+.card-form {
+  height: 80%;
+  width: 50%;
+  background-color: #dee2e6;
+  color: #212529;
+  border-radius: 1rem;
+  margin: auto;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title-input {
+  width: 95%;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.8rem;
+  color: #0b0b0b;
+  padding: 0 1.5rem;
+
+  background-color: transparent;
+}
+
+.cardTitle {
+  width: 95%;
+  height: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0b0b0b;
+  padding: 0 1.5rem;
+
+  background-color: transparent;
+}
+
+.card-body-area {
+  border: none;
+  width: 95%;
+  height: 80%;
+  text-align: left;
+  margin: auto;
+  color: #212529;
+  padding: 1.5rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.cardText {
+  border: none;
+  width: 95%;
+  height: 80%;
+  text-align: left;
+  margin: auto;
+  border-radius: 0.5rem;
+  color: #212529;
+  padding: 1.5rem;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.add-on-card-btn {
+  font-size: 4rem;
+  margin: auto;
+  text-align: left;
+}
+
+/* Hide elements --- always below*/
 
 .main-hide {
   display: none;
@@ -158,27 +233,4 @@ button {
   opacity: 1;
   pointer-events: none;
   transition: opacity 1s ease;
-}
-
-/* Card component */
-
-.card-form {
-  height: 80%;
-  width: 50%;
-  background-color: #dee2e6;
-  color: #212529;
-  border-radius: 1rem;
-  margin: auto;
-
-  padding: 2rem;
-}
-
-.card-title-input {
-  width: 20rem;
-  height: 2.5rem;
-  border: none;
-  border-radius: 2rem;
-  font-size: 1.5rem;
-  color: #0b0b0b;
-  padding: 0 1.5rem;
 }
